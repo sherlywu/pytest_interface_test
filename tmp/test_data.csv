@@ -1,0 +1,5 @@
+test_data,status_code,except_val
+"{'accesstoken': '', 'title': '学习接口测试', 'tab': 'ask', 'content': 'abcdfeg'}",401,"{'success': False, 'error_msg': '错误的accessToken'}"
+"{'accesstoken': '25200bea-4ac3-4851-9846-c1f88c89e627', 'title': '', 'tab': 'ask', 'content': 'abcdfeg'}",400,"{'success': False, 'error_msg': '标题不能为空'}"
+"{'accesstoken': '25200bea-4ac3-4851-9846-c1f88c89e627', 'title': '1234567', 'tab': '', 'content': 'abcdfeg'}",400,"{'success': False, 'error_msg': '必须选择一个版块'}"
+"{'accesstoken': '25200bea-4ac3-4851-9846-c1f88c89e627', 'title': '1234567', 'tab': 'ask', 'content': ''}",400,"{'success': False, 'error_msg': '内容不可为空'}"
