@@ -4,6 +4,14 @@
 import pytest
 import time
 
-if __name__ == "__main__":
+def run_all_cases():
     current_day = time.strftime("%Y-%m-%d")
-    pytest.main(['testcases', '-vv', f'--html=reports/report_{current_day}.html'])
+    pytest.main(['testcases', '-v', '-s', f'--html=reports/report_{current_day}.html'])
+
+def run_case():
+    current_day = time.strftime("%Y-%m-%d")
+    pytest.main(['testcases', '-v', '-s', '-m tmp', f'--html=reports/report_{current_day}.html'])
+
+
+if __name__ == "__main__":
+    run_all_cases()
