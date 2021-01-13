@@ -6,4 +6,4 @@ import time
 
 if __name__ == "__main__":
     current_day = time.strftime("%Y-%m-%d")
-    pytest.main(['testcases', '-v', f'--html=reports/report_{current_day}.html'])
+    pytest.main(['testcases', '-vv', f'--html=reports/report_{current_day}.html'])

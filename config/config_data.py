@@ -3,8 +3,8 @@
 """
 
 # 定义可能要有的变量
-test_data = {"tid": ""}
-test_token = "abb32230-2853-41a7-9f0a-82c07a28c515"
+test_data = {'tid': '', 'reply_id': ''}
+test_token = 'abb32230-2853-41a7-9f0a-82c07a28c515'
 loginname = 'fanmao1'
-test_rid = {"rid": ""}
 msg_id = '58ec7d39da8344a81eee0c14'
+base_url = 'http://49.233.108.117:3000/api/v1'

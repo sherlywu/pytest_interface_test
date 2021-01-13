@@ -25,6 +25,7 @@ def test_index_page():
 
 # 发送post请求
 # 新建主题
+@pytest.mark.tmp
 @pytest.mark.run(order=1)
 @pytest.mark.regression
 @pytest.mark.smoke
